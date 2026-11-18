@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+escola.db
+*.log
+.venv/
+cupp/
+wl_*.txt
+*.png
+relatorio/*.pdf

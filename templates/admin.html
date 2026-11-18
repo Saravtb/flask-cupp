@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block c %}
+<h2>Painel do administrador</h2><p><a href="/logout">Sair</a></p>
+<table><tr><th>Aluno</th><th>Nascimento</th><th>Endereco</th><th>Celular</th><th></th></tr>
+{% for a in alunos %}<tr><td>{{ a.nome }}</td><td>{{ a.nascimento }}</td><td>{{ a.endereco }}</td>
+<td>{{ a.celular }}</td><td><a href="/admin/aluno/{{ a.id }}">Editar notas</a></td></tr>{% endfor %}
+</table>{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block c %}
+<h2>Painel do aluno</h2><p><a href="/logout">Sair</a></p>
+<h3>Dados pessoais</h3>
+<p><b>Nome:</b> {{ aluno.nome }}<br><b>Nascimento:</b> {{ aluno.nascimento }}<br>
+<b>Endereco:</b> {{ aluno.endereco }}<br><b>Celular:</b> {{ aluno.celular }}</p>
+<h3>Notas</h3>
+<table><tr><th>Materia</th><th>Nota</th></tr>
+{% for n in notas %}<tr><td>{{ n.materia }}</td><td>{{ n.nota }}</td></tr>{% endfor %}
+</table>{% endblock %}

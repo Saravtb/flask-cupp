@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block c %}
+<h2>Entrar</h2>
+{% if erro %}<div class="msg">{{ erro }}</div>{% endif %}
+<form method="post">
+{% if hardened %}<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{% endif %}
+<label>Usuario<br><input name="usuario" required></label><br>
+<label>Senha<br><input name="senha" type="password" required></label><br>
+<button type="submit">Entrar</button>
+</form>{% endblock %}
