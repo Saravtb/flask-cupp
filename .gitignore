@@ -5,5 +5,4 @@ escola.db
 .venv/
 cupp/
 wl_*.txt
-*.png
 relatorio/*.pdf
